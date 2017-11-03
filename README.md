@@ -67,5 +67,5 @@ A python program `logs_anlysis.py` was created from the following psql queries:
   * SQL_query1 = select * from pop_article_view limit 3;
   * SQL_query2 = query_2 = select * from pop_authors_view;
   * SQL_query3 = query_2 = select * from pop_authors_view;
-From VM, cd vagrant and run cmd `python logs_analysis.py` to get output[link to output]( https://github.com/sb2333/Udacity-Logs_Analysis/blob/master/logs_output.txt)
+From VM, cd vagrant and run cmd `python logs_analysis.py` to get [link to output]( https://github.com/sb2333/Udacity-Logs_Analysis/blob/master/logs_output.txt)
 
