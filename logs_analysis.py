@@ -106,7 +106,7 @@ def percent_error(SQL_query_3):
     db.close()
 
 if __name__ == '__main__':
-        
+
     print "\n The results for Most Popular Articles are:\n"
     most_pop_articles(SQL_query_1)
     print("\n")
