@@ -61,3 +61,11 @@ FROM errors_total AS e, requests_total AS r
 WHERE r.date = e.date
 ORDER BY r.date;
 ```
+
+## Python Program
+A python program `logs_anlysis.py` was created from the following psql queries:
+  * SQL_query1 = select * from pop_article_view limit 3;
+  * SQL_query2 = query_2 = select * from pop_authors_view;
+  * SQL_query3 = query_2 = select * from pop_authors_view;
+From VM, cd vagrant and run cmd `python logs_analysis.py` to get logs_output.tx  
+
