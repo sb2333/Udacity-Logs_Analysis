@@ -1,9 +1,8 @@
-"""Project: LOGS ANALYSIS"""
-
-
-# /usr/bin/python 2.7.13
+#!/usr/bin/env python
 #
 #
+"""Project: LOGS ANALYSIS""
+
 
 import psycopg2
 
@@ -14,7 +13,7 @@ def connect():
     try:
         db = psycopg2.connect("dbname='news'")
         c = db.cursor()
-    return db, c
+return db, c
     except psycopg2.DatabaseError:
         print "I am unable to connect to the database."
 
