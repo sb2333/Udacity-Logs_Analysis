@@ -30,8 +30,8 @@ The scope of this project was given to help develop the students SQL skills by b
 pop_article_Pview
 
 CREATE view pop_article_view AS
-SELECT title, count (slug) AS views
-FROM articles LEFT JOIN log ON log.path LIKE concat ('%', articles.slug) 
+SELECT title, count(slug) AS views
+FROM articles LEFT JOIN log ON log.path LIKE concat('%', articles.slug) 
 GROUP BY title 
 ORDER BY views desc;
 
