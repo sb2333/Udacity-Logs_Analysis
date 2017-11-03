@@ -15,7 +15,7 @@ def connect():
         db = psycopg2.connect("dbname='news'")
         c = db.cursor()
     return db, c
-    except:
+    except psycopg2.DatabaseError as error:
         print "I am unable to connect to the database."
 
 # 1. What are the most popular three articles of all time?
