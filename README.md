@@ -83,4 +83,3 @@ From VM, cd vagrant and run cmd `python logs_analysis.py` to get [link to output
   * GitHub Community: Markown tutorial and code help
   * StackOverflow.com
   * W3School.com
-  * 
