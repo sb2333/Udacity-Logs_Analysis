@@ -8,4 +8,7 @@ The scope of this project was given to help develop the students SQL skills by b
 2. Who are the most popular article authors of all time?
 3. On which days did more than 1% of requests lead to errors?
 
+## Software and Files
+
+1. Install Virtual Machine per instructions from 
 
