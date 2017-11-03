@@ -22,6 +22,7 @@ def connect():
 # Create pop_article_view
 
 """
+
 create view pop_article_view as
 select title, count (slug) as views
 from articles left join log on log.path like concat ('%', articles.slug)
@@ -105,11 +106,12 @@ def percent_error(SQL_query_3):
     db.close()
 
 if __name__ == '__main__':
+        
     print "\n The results for Most Popular Articles are:\n"
     most_pop_articles(SQL_query_1)
-    print ("\n")
+    print("\n")
     print "\n The results for Most Popular Authors are:\n"
     most_pop_authors(SQL_query_2)
-    print ("\n")
+    print("\n")
     print "\n The results for days with more than 1% of errors are:\n"
     percent_error(SQL_query_3)
