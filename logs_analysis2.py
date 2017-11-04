@@ -106,7 +106,7 @@ def percent_error(SQL_query_3):
         print "\"" + str(results[i][0]) + "\" - " + str(results[i][1])\
                   + "% errors"
     db.close()
-    
+
 
 def get_query_results(query):
 
