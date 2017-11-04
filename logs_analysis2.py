@@ -10,7 +10,7 @@ import psycopg2
 def connect():
 
     """Try to connect to database news"""
-    
+
     try:
         db = psycopg2.connect("dbname='news'")
         c = db.cursor()
@@ -108,6 +108,7 @@ def percent_error(SQL_query_3):
     db.close()
 
 def get_query_results(query):
+
     try:
         db = psycopg2.connect(database="news")
         c = db.cursor()
