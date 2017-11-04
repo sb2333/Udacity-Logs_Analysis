@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 #
-"""Project: LOGS ANALYSIS""
+"""Project: LOGS ANALYSIS"""
 
 
 import psycopg2
