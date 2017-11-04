@@ -10,8 +10,9 @@ The scope of this project was given to help develop the students SQL skills by b
 
 ## Software and Files
 
-1. Install Virtual Machine per Udacity class-room instructions
-2. Download `newsdata` zip file and extract file `newsdata.sql` and save it to the `vagrant` directory
+1. Install Virtual Machine for your computer's OS (google Virtural Machines  to find links)
+2. Download `newsdata` zip file [here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
+3. Extract file `newsdata.sql` and save it to the `vagrant` directory
 
 ## Load Data and Connect to VM
    * from vm cd to vagrant directory
