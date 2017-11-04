@@ -89,8 +89,8 @@ def most_pop_authors(SQL_query_2):
     db, c = connect()
     c.execute(SQL_query_2)
     results = c.fetchall()
-    for authors.name, views in results:
-        print "\"{}\" - {} views".format(authors.name, views)
+    for name, views in results:
+        print "\"{}\" - {} views".format(name, views)
     db.close()
 
 
@@ -103,7 +103,8 @@ def percent_error(SQL_query_3):
     c.execute(SQL_query_3)
     results = c.fetchall()
     for i in range(0, len(results), 1):
-        print "\" + str(results[i][0]) + "\" - " + str(results[i][1]) + "% errors"
+        print "\"" + str(results[i][0]) + "\" - " + str(results[i][1])\
+                  + "% errors"
     db.close()
 
 if __name__ == '__main__':
