@@ -13,7 +13,7 @@ def connect():
     try:
         db = psycopg2.connect("dbname='news'")
         c = db.cursor()
-return db, c
+        return db, c
     except psycopg2.DatabaseError:
         print "I am unable to connect to the database."
 
@@ -58,7 +58,8 @@ Error Percent view:
 create view percent_error as
 select r.date, round((100.00*(e.total)/r.total),3) as percent_error
 from errors_total as e, requests_total as r
-where r.date = e.date order by r.date
+where r.date = e.date
+order by r.date
 """
 
 SQL_query_1 = "select * from pop_article_view limit 3"
@@ -74,8 +75,8 @@ def most_pop_articles(SQL_query_1):
     db, c = connect()
     c.execute(SQL_query_1)
     results = c.fetchall()
-    for i in range(0, len(results), 1):
-        print "\"" + results[i][0] + "\" - " + str(results[i][1]) + " views"
+    for title, views in results:
+        print "\"{}\" - {} views".format(title, views)
     db.close()
 
 
@@ -87,9 +88,9 @@ def most_pop_authors(SQL_query_2):
     db, c = connect()
     c.execute(SQL_query_2)
     results = c.fetchall()
-    for i in range(0, len(results), 1):
-        print "\"" + results[i][0] + "\" - " + str(results[i][1]) + "views"
-        db.close()
+     for authors.name, views in results:
+        print "\"{}\" - {} views".format(authors.name, views)
+    db.close()
 
 
 def percent_error(SQL_query_3):
@@ -101,7 +102,7 @@ def percent_error(SQL_query_3):
     c.execute(SQL_query_3)
     results = c.fetchall()
     for i in range(0, len(results), 1):
-        print str(results[i][0]) + "\" - " + str(results[i][1]) + "% errors"
+        print "\" + str(results[i][0]) + "\" - " + str(results[i][1]) + "% errors"
     db.close()
 
 if __name__ == '__main__':
