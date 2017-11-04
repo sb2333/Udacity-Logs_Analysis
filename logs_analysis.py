@@ -89,7 +89,7 @@ def most_pop_authors(SQL_query_2):
     db, c = connect()
     c.execute(SQL_query_2)
     results = c.fetchall()
-     for authors.name, views in results:
+    for authors.name, views in results:
         print "\"{}\" - {} views".format(authors.name, views)
     db.close()
 
