@@ -10,6 +10,7 @@ import psycopg2
 def connect():
 
     """Try to connect to database news"""
+    
     try:
         db = psycopg2.connect("dbname='news'")
         c = db.cursor()
