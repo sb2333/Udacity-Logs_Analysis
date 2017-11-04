@@ -1,0 +1,22 @@
+vagrant@vagrant:/vagrant$ python logs_analysis2.py
+
+ The results for Most Popular Articles are:
+
+"Candidate is jerk, alleges rival" - 338647 views
+"Bears love berries, alleges bear" - 253801 views
+"Bad things gone, say good people" - 170098 views
+
+
+
+ The results for Most Popular Authors are:
+
+"Ursula La Multa" - 507594 views
+"Rudolf von Treppenwitz" - 423457 views
+"Anonymous Contributor" - 170098 views
+"Markoff Chaney" - 84557 views
+
+
+
+ The results for days with more than 1% of errors are:
+
+"2016-07-17" - 2.263% errors
