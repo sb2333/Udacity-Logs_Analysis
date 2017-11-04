@@ -32,7 +32,7 @@ pop_article_Pview
 
 CREATE view pop_article_view AS
 SELECT title, count(slug) AS views
-FROM articles LEFT JOIN log ON log.path LIKE concat('%', articles.slug) 
+FROM articles LEFT JOIN log ON log.path LIKE concat('/article/', articles.slug) 
 GROUP BY title 
 ORDER BY views desc;
 
@@ -41,7 +41,7 @@ pop_authors_view
 CREATE view pop_authors_view AS
 SELECT authors.name, count(articles.author) AS views
 FROM articles, log, authors
-WHERE log.path LIKE concat('%', articles.slug) AND articles.author = authors.id
+WHERE log.path LIKE concat('/article/', articles.slug) AND articles.author = authors.id
 GROUP BY authors.name
 ORDER BY views desc;
 
