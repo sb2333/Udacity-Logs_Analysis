@@ -57,7 +57,8 @@ group by date
 order by total desc
 Error Percent view:
 create view percent_error as
-select to_char(r.date, 'Mon DD, YYYY') round((100.00*(e.total)/r.total),3) as percent_error
+select to_char(r.date, 'Mon DD, YYYY') round((100.00*(e.total)/r.total),3)\
+as percent_error
 from errors_total as e, requests_total as r
 where r.date = e.date
 order by r.date
