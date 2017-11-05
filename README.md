@@ -65,7 +65,7 @@ ORDER BY total desc;
 percent_error view
 
 CREATE view percent_error AS 
-SELECT r.date, ROUND((100.00*(e.total)/r.total),3) AS percent_error
+SELECT to_char(r.date, 'Mon DD, YYYY'), ROUND((100.00*(e.total)/r.total),3) AS percent_error
 FROM errors_total AS e, requests_total AS r 
 WHERE r.date = e.date
 ORDER BY r.date;
