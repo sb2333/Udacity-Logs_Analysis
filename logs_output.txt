@@ -19,4 +19,5 @@ vagrant@vagrant:/vagrant$ python logs_analysis2.py
 
  The results for days with more than 1% of errors are:
 
-"2016-07-17" - 2.263% errors
+"Jul 17, 2016" - 2.263% errors
+
